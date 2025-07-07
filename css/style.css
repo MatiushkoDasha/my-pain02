@@ -15,29 +15,30 @@
             list-style: none; 
         }
 
-        nav {
-            text-align: center;
-        }
         .wrapper {
            padding: 19px 100px;
         }
 
-        .center {
-            text-align: center;
-            padding-right: 59px;
-            display: block;
+        .flex_between {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .flex {
+            align-items: center;
+            display: flex;
         }
 
         .center ul {
-            padding-right: 60px;
+            gap: 32px;
+            padding: 6px 53px;
             border-radius: 20px;
             background-color: rgba(172, 172, 170, 0.3);
         }
 
         .center a {
             font-weight: bold;
-            text-align: center;
-            display: block;
             color:white;
             text-decoration:  none;
             
@@ -53,12 +54,15 @@
             height: 26px;
         }
 
-        .tel a {
+        .tel a  {
+            gap: 10px;
             font-size: 16px;
             line-height: 50px;
-            text-align: center;
             color: #fff;
-        
+        }
+
+        .main img {
+           margin: 0 -20px 0 0;
         }
 
         .mini  {
@@ -84,6 +88,7 @@
         }
 
         .osnova a {
+            text-transform: uppercase;
             margin: 25px 0 32px;
             display: inline-block;
             font-size: 18px;
@@ -94,31 +99,35 @@
             border-style: solid;
             border-color: #f4d633;
         }
-
         .vidguk {
-            display: flex;
+            margin: 0 10px;
+            gap: 8px;
         }
-        
         .vidguk p {
-            margin: 0 0 0 8px;
+            margin: 0  8px;
             font-size: 20px;
             color: #ffffff;
             font-weight: bold;
         }
 
-        .footer {      
-            margin-top: 130px;
-            width: 100%;
+        .footer {    
+            align-items: center;  
             background-color: #f4d633;
         }
 
         .rosclad {
+            display: block;
+            font-weight: bold;
             font-size: 16px;
             color: #1e3c6f;
         }
 
-        .logo2 h6 {
+        .footer ul {
+            gap: 11px;
+        }
+        .logo2 p {
+            text-align: right;
             font-size: 12px;
             color: #204075;
-            margin-top: 5px ;
+
         }
