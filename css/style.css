@@ -7,6 +7,10 @@
             background-image:radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);;
         }
 
+        .header {
+            padding-top: 30px;
+        }
+
         a {
             text-decoration:  none;
         }
@@ -15,8 +19,12 @@
             list-style: none; 
         }
 
+        main  img {
+            margin: 0 0 -4px 0;
+        }
         .wrapper {
-           padding: 19px 100px;
+           padding-right:  100px;
+           padding-left: 100px;
         }
 
         .flex_between {
@@ -57,12 +65,7 @@
         .tel a  {
             gap: 10px;
             font-size: 16px;
-            line-height: 50px;
             color: #fff;
-        }
-
-        .main img {
-           margin: 0 -20px 0 0;
         }
 
         .mini  {
@@ -93,24 +96,26 @@
             display: inline-block;
             font-size: 18px;
             font-weight: bold;
-            padding: 22px 66px ;
+            padding: 23px 66px ;
             color: #f4d633;
             border-radius: 40px ;
             border-style: solid;
             border-color: #f4d633;
         }
+
         .vidguk {
-            margin: 0 10px;
-            gap: 8px;
+            gap: 10px;
         }
+
         .vidguk p {
-            margin: 0  8px;
             font-size: 20px;
             color: #ffffff;
             font-weight: bold;
         }
 
         .footer {    
+            padding-top:12px ;
+            padding-bottom: 13px;
             align-items: center;  
             background-color: #f4d633;
         }
@@ -123,8 +128,14 @@
         }
 
         .footer ul {
-            gap: 11px;
+            gap: 8px;
         }
+
+        .footer ul img {
+            width: 26px;
+            height: 26px;
+        }
+        
         .logo2 p {
             text-align: right;
             font-size: 12px;
