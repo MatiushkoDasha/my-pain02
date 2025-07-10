@@ -20,6 +20,7 @@
         }
 
         main  img {
+            justify-content: flex-end;
             margin: 0 0 -4px 0;
         }
         .wrapper {
@@ -75,12 +76,17 @@
         }
 
         .big {
+            padding-bottom: 24px;
             max-width: 665px;
             margin: 0 ;
             font-size: 30px;
             color: #ffffff;
         }
 
+        .osnova {
+            padding-left: 100px;
+            display: block;
+        }
         .osnova h1 {
             text-transform: uppercase;
             margin: 0;
@@ -92,7 +98,6 @@
 
         .osnova a {
             text-transform: uppercase;
-            margin: 25px 0 32px;
             display: inline-block;
             font-size: 18px;
             font-weight: bold;
@@ -104,6 +109,7 @@
         }
 
         .vidguk {
+            padding-top: 30px;
             gap: 10px;
         }
 
@@ -121,6 +127,7 @@
         }
 
         .rosclad {
+            line-height: 29px;
             display: block;
             font-weight: bold;
             font-size: 16px;
