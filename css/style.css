@@ -4,6 +4,7 @@
         }
         body {
             font-family: "Arial";
+            cursor: url(../img/cursor.cur),default;
             background-image:radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);;
         }
 
@@ -12,6 +13,7 @@
         }
 
         a {
+            cursor: url(../img/football.cur),default;
             text-decoration:  none;
         }
 
