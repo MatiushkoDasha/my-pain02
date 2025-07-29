@@ -26,8 +26,8 @@
             margin: 0 0 -4px 0;
         }
         .wrapper {
-           padding-right:  100px;
-           padding-left: 100px;
+            margin: 0 auto;
+            max-width: 1000px;
         }
 
         .flex_between {
@@ -52,7 +52,10 @@
             font-weight: bold;
             color:white;
             text-decoration:  none;
-            
+        }
+
+        .hover :hover  {
+            color: #f4d633;
         }
         .center li {
             font-size: 14px;
