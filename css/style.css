@@ -129,8 +129,8 @@
 
         .ball {
             position: absolute;
-            top: 50px;
-            left: 894px;
+            bottom: 83px;
+            right: 0;
         }
         .footer {    
             padding-top:12px ;
