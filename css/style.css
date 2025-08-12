@@ -3,6 +3,7 @@
             padding: 0;
         }
         body {
+            position: relative;
             font-family: "Arial";
             cursor: url(../img/cursor.cur),default;
             background-image:radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);;
@@ -87,9 +88,11 @@
             font-size: 30px;
             color: #ffffff;
         }
-
+        main {
+            padding-bottom: 130px;
+        }
         .osnova {
-            padding-left: 100px;
+            padding-top: 153px;
             display: block;
         }
         .osnova h1 {
@@ -124,6 +127,11 @@
             font-weight: bold;
         }
 
+        .ball {
+            position: absolute;
+            top: 50px;
+            left: 894px;
+        }
         .footer {    
             padding-top:12px ;
             padding-bottom: 13px;
