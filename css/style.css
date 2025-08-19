@@ -2,6 +2,11 @@
             margin: 0;
             padding: 0;
         }
+
+        html {
+            font-size: 0.8px;
+        }
+
         body {
             position: relative;
             font-family: "Arial";
@@ -10,7 +15,7 @@
         }
 
         .header {
-            padding-top: 30px;
+            padding-top: 30rem;
         }
 
         a {
@@ -24,11 +29,12 @@
 
         main  img {
             justify-content: flex-end;
-            margin: 0 0 -4px 0;
+            margin: 0 0 -4rem 0;
         }
+
         .wrapper {
             margin: 0 auto;
-            max-width: 1000px;
+            max-width: 1000rem;
         }
 
         .flex_between {
@@ -42,11 +48,65 @@
             display: flex;
         }
 
-        .center ul {
-            gap: 32px;
-            padding: 6px 53px;
-            border-radius: 20px;
-            background-color: rgba(172, 172, 170, 0.3);
+        .dark-bgc {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(4px);
+            z-index: 1;
+        }
+
+        .burger {
+            width: 50px;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .bord {
+            display: block;
+            margin: 4px;
+            width: 30px;
+            height: 5px;
+            border-radius: 2px;
+            background-color: red;
+            transition: all 1s ease;
+        }
+        .burger:hover > .b1 {
+            transform: translateX(20px);
+        }
+        .burger:hover > .b2 {
+            transform: translateX(10px);
+        }
+
+        .b1 {
+            width: 20px;
+        }
+        .b2 {
+            width: 30px;
+        }
+        .b3 {
+            width: 40px;
+            top: 10px;
+        }
+
+        .center {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            z-index: 2;
+            background-color: white;
+            transition: all .5s ease;
+            }
+
+        .cancel {
+            position: absolute;
+            top: -10px;
+            right: 5px;
+            cursor: pointer;
         }
 
         .center a {
@@ -58,48 +118,49 @@
         .hover :hover  {
             color: #f4d633;
         }
+
         .center li {
-            font-size: 14px;
-            line-height: 30px;
+            font-size: 14rem;
+            line-height: 30rem;
             text-transform: uppercase;
         }
 
         .tel img {
-            width: 25px;
-            height: 26px;
+            width: 25rem;
+            height: 26rem;
         }
 
         .tel a  {
-            gap: 10px;
-            font-size: 16px;
+            gap: 10rem;
+            font-size: 16rem;
             color: #fff;
         }
 
         .mini  {
-            font-size: 16px;
+            font-size: 16rem;
             color: #ffffff;
             font-style: italic;
         }
 
         .big {
-            padding-bottom: 24px;
-            max-width: 665px;
+            padding-bottom: 24rem;
+            max-width: 665rem;
             margin: 0 ;
-            font-size: 30px;
+            font-size: 30rem;
             color: #ffffff;
         }
         main {
-            padding-bottom: 130px;
+            padding-bottom: 130rem;
         }
         .osnova {
-            padding-top: 153px;
+            padding-top: 153rem;
             display: block;
         }
         .osnova h1 {
             text-transform: uppercase;
             margin: 0;
-            max-width: 687px;
-            font-size: 48px;
+            max-width: 687rem;
+            font-size: 48rem;
             color: #ffffff;
             font-weight: 800;
         }
@@ -107,58 +168,122 @@
         .osnova a {
             text-transform: uppercase;
             display: inline-block;
-            font-size: 18px;
+            font-size: 18rem;
             font-weight: bold;
-            padding: 23px 66px ;
+            padding: 23rem 66rem ;
             color: #f4d633;
-            border-radius: 40px ;
+            border-radius: 40rem ;
             border-style: solid;
             border-color: #f4d633;
         }
 
         .vidguk {
-            padding-top: 30px;
-            gap: 10px;
+            flex-wrap: wrap;
+            padding-top: 30rem;
+            gap: 10rem;
         }
 
         .vidguk p {
-            font-size: 20px;
+            font-size: 20rem;
             color: #ffffff;
             font-weight: bold;
         }
 
         .ball {
-            position: absolute;
-            bottom: 83px;
-            right: 0;
+            display: none;
+            bottom: 86rem;
+            right: 0rem;
         }
+
         .footer {    
-            padding-top:12px ;
-            padding-bottom: 13px;
+            padding-top:12rem ;
+            padding-bottom: 13rem;
             align-items: center;  
             background-color: #f4d633;
         }
 
         .rosclad {
-            line-height: 29px;
+            line-height: 29rem;
             display: block;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 16rem;
             color: #1e3c6f;
         }
 
         .footer ul {
-            gap: 8px;
+            gap: 8rem;
         }
 
         .footer ul img {
-            width: 26px;
-            height: 26px;
+            width: 26rem;
+            height: 26rem;
         }
         
         .logo2 p {
             text-align: right;
-            font-size: 12px;
+            font-size: 12rem;
             color: #204075;
 
         }
+
+
+    @media screen  and (min-width: 768px){
+        html {
+            font-size: .9px;
+        }
+
+        header {
+            flex-wrap: nowrap;
+        }
+
+        .main_conteiner {
+            flex-wrap: nowrap;
+        }
+
+        .burger {
+            display: none;
+        }
+
+        .center {
+            display: block;
+        }
+
+        .center ul {
+            padding: 6rem 53rem;
+            border-radius: 20rem;
+            background-color: rgba(172, 172, 170, 0.3);
+            gap: 32rem;
+            }
+
+}
+
+@media screen  and (min-width: 1024px){
+    html {
+        font-size: 1px;
+    }
+    
+    .ball {
+        display: block;
+        position: absolute;
+        bottom: 86rem;
+        right: 0rem;
+    }
+}
+
+@media screen  and (min-width: 1400px){
+    html {
+        font-size: 1.1px;
+    }
+}
+
+@media screen  and (min-width: 1920px){
+    html {
+        font-size: 1.5px;
+    }
+}
+
+@media screen  and (min-width: 2200px){
+    html {
+        font-size: 1.7px;
+    }
+}
