@@ -119,6 +119,17 @@
             color: #f4d633;
         }
 
+        .center {
+            display: none;
+        }
+
+        .center ul {
+            padding: 6rem 53rem;
+            border-radius: 20rem;
+            background-color: rgba(172, 172, 170, 0.3);
+            gap: 32rem;
+            }
+
         .center li {
             font-size: 14rem;
             line-height: 30rem;
@@ -236,6 +247,9 @@
             flex-wrap: nowrap;
         }
 
+        .center {
+            display: block;
+        }
         .main_conteiner {
             flex-wrap: nowrap;
         }
@@ -244,16 +258,7 @@
             display: none;
         }
 
-        .center {
-            display: block;
-        }
 
-        .center ul {
-            padding: 6rem 53rem;
-            border-radius: 20rem;
-            background-color: rgba(172, 172, 170, 0.3);
-            gap: 32rem;
-            }
 
 }
 
