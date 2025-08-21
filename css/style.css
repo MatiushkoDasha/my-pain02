@@ -4,7 +4,7 @@
         }
 
         html {
-            font-size: 0.8px;
+            font-size: .8px;
         }
 
         body {
@@ -14,7 +14,8 @@
             background-image:radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);;
         }
 
-        .header {
+        header {
+            flex-wrap: wrap;
             padding-top: 30rem;
         }
 
@@ -22,32 +23,32 @@
             cursor: url(../img/football.cur),default;
             text-decoration:  none;
         }
-
+        
         ul { 
             list-style: none; 
         }
-
+        
         main  img {
             justify-content: flex-end;
             margin: 0 0 -4rem 0;
         }
-
+        
         .wrapper {
             margin: 0 auto;
             max-width: 1000rem;
         }
-
+        
         .flex_between {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
+        
         .flex {
             align-items: center;
             display: flex;
         }
-
+        
         .dark-bgc {
             display: none;
             position: fixed;
@@ -59,11 +60,13 @@
             backdrop-filter: blur(4px);
             z-index: 1;
         }
-
+        
         .burger {
+            justify-content: flex-end;
             width: 50px;
             height: 100%;
             cursor: pointer;
+            gap: 15rem;
         }
 
         .bord {
@@ -72,27 +75,26 @@
             width: 30px;
             height: 5px;
             border-radius: 2px;
-            background-color: red;
+            background-color: white;
             transition: all 1s ease;
         }
+        
         .burger:hover > .b1 {
             transform: translateX(20px);
         }
         .burger:hover > .b2 {
             transform: translateX(10px);
         }
-
-        .b1 {
-            width: 20px;
+        
+        .b1, .b2 {
+            width: 40px;
         }
-        .b2 {
-            width: 30px;
-        }
+       
         .b3 {
             width: 40px;
             top: 10px;
         }
-
+        
         .center {
             position: absolute;
             top: 0;
@@ -100,8 +102,8 @@
             z-index: 2;
             background-color: white;
             transition: all .5s ease;
-            }
-
+        }
+        
         .cancel {
             position: absolute;
             top: -10px;
@@ -114,28 +116,19 @@
             color:white;
             text-decoration:  none;
         }
-
+        
         .hover :hover  {
             color: #f4d633;
         }
-
+        
         .center {
             display: none;
         }
 
-        .center ul {
-            padding: 6rem 53rem;
-            border-radius: 20rem;
-            background-color: rgba(172, 172, 170, 0.3);
-            gap: 32rem;
-            }
-
-        .center li {
-            font-size: 14rem;
-            line-height: 30rem;
-            text-transform: uppercase;
+        .tel {
+            padding-top: 15rem;
         }
-
+        
         .tel img {
             width: 25rem;
             height: 26rem;
@@ -167,21 +160,23 @@
             padding-top: 153rem;
             display: block;
         }
+
         .osnova h1 {
             text-transform: uppercase;
             margin: 0;
-            max-width: 687rem;
             font-size: 48rem;
             color: #ffffff;
             font-weight: 800;
         }
-
+        
         .osnova a {
+            display: block;
             text-transform: uppercase;
-            display: inline-block;
             font-size: 18rem;
             font-weight: bold;
-            padding: 23rem 66rem ;
+            max-width: 100%;
+            padding: 23rem ;
+            text-align: center;
             color: #f4d633;
             border-radius: 40rem ;
             border-style: solid;
@@ -189,6 +184,7 @@
         }
 
         .vidguk {
+            justify-content: center;
             flex-wrap: wrap;
             padding-top: 30rem;
             gap: 10rem;
@@ -214,10 +210,10 @@
         }
 
         .rosclad {
-            line-height: 29rem;
             display: block;
             font-weight: bold;
             font-size: 16rem;
+            line-height: 29rem;
             color: #1e3c6f;
         }
 
@@ -237,6 +233,21 @@
 
         }
 
+         @media screen  and (min-width: 422px){
+
+        html {
+            font-size: .9px;
+        }
+
+        .osnova a {
+            max-width: 250rem;
+            padding: 23rem 42rem ;
+        }
+
+         .vidguk {
+            justify-content: flex-start;
+         }
+         }
 
     @media screen  and (min-width: 768px){
         html {
@@ -249,6 +260,22 @@
 
         .center {
             display: block;
+            position: relative;
+            left: 0;
+            background-color: transparent;
+        }
+
+        .center ul {
+            padding: 6rem 53rem;
+            border-radius: 20rem;
+            background-color: rgba(172, 172, 170, 0.3);
+            gap: 32rem;
+            }
+
+        .center li {
+            font-size: 14rem;
+            line-height: 30rem;
+            text-transform: uppercase;
         }
         .main_conteiner {
             flex-wrap: nowrap;
@@ -257,8 +284,6 @@
         .burger {
             display: none;
         }
-
-
 
 }
 
