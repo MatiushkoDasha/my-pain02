@@ -31,9 +31,17 @@
 
         main  img {
             justify-content: flex-end;
-            margin: 0 0 -10rem  0;
+            margin: 0 0 10rem  0;
         }
         
+        .flex_wrrap {
+            display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           align-items: center;
+           gap: 20rem;
+        }
+
         .wrapper {
             margin: 0 auto;
             padding: 15rem;
@@ -106,12 +114,11 @@
             position: fixed;
             top: 10%;
             right:-100% ;
-            width: 80vw;
-            height: 70vh;
+            width: 100vw;
+            height: 100vh;
             padding: 10% 0;
-            text-align: center;
             z-index: 2;
-            background-color: rgba(168, 168, 162, 0.5);
+            background-color: rgba(168, 168, 162, 0.9);
             transition: all .5s ease;
         }
 
@@ -142,6 +149,11 @@
         .hover :hover  {
             color: #f4d633;
         }
+
+        .hovertwo:hover {
+            color: #fff;
+            transition: transform 0.3s;
+        }
         
         .tel {
             display: none;
@@ -158,7 +170,7 @@
         }
 
         .mini  {
-            font-size: 16rem;
+            font-size: 20rem;
             color: #ffffff;
             font-style: italic;
         }
@@ -174,6 +186,7 @@
         main {
             padding-bottom: 130rem;
         }
+
         .osnova {
             display: block;
             padding-top: 153rem;
@@ -183,7 +196,7 @@
         .osnova h1 {
             text-transform: uppercase;
             margin: 0;
-            font-size: 38rem;
+            font-size: 30em;
             color: #ffffff;
             font-weight: 800;
         }
@@ -203,12 +216,12 @@
         }
 
         .vidguk {
-            justify-content: center;
             align-items: center;
             padding-top: 30rem;
             gap: 10rem;
         }
 
+    
         .vidguk p {
             font-size: 20rem;
             color: #ffffff;
@@ -219,8 +232,7 @@
             display: none;
             bottom: 86rem;
             right: 0rem;
-            width: 457rem;
-            height: 711rem;
+           
         }
 
         .footer {    
@@ -248,11 +260,9 @@
             width: 26rem;
             height: 26rem;
         }
-        
-        .logo2 a{
-           justify-content: end;
+        .logo2 {
+            justify-content: center;
         }
-
         .logo2 p {
             text-align: center;
             font-size: 12rem;
@@ -300,6 +310,14 @@
             .osnova h1 {
                 font-size: 48rem;
             }
+
+           .flex_wrrap {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+           }
+
         }
         
         @media screen  and (min-width: 768px){
