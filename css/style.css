@@ -28,18 +28,12 @@
             list-style: none; 
         }
         
-
-        main  img {
-            justify-content: flex-end;
-            margin: 0 0 10rem  0;
-        }
-        
         .flex_wrrap {
             display: flex;
-           flex-wrap: wrap;
-           justify-content: center;
-           align-items: center;
-           gap: 20rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20rem;
         }
 
         .wrapper {
@@ -80,7 +74,7 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(8px);
-            z-index: 1;
+            z-index: 4;
         }
         
         .burger {
@@ -110,54 +104,62 @@
             top: 10px;
         }
         
-        .menu {
+        .center {
+            display: block;
             position: fixed;
-            top: 10%;
-            right:-100% ;
-            width: 100vw;
-            height: 100vh;
-            padding: 10% 0;
+            top: 0;
+            right: -100%;
             z-index: 2;
-            background-color: rgba(168, 168, 162, 0.9);
+            width: 70vw;
+            height: 100vh;
+            background-color: #f4d633;
             transition: all .5s ease;
+            z-index: 5;
         }
 
-        .menu ul {
-          display: grid;
-          justify-content: center;
-          align-items: center;
-          gap: 70rem;
-            
+        .center ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20% 20rem ;
+            gap: 100rem;
         }
         
-        .cancel {
-            position: absolute;
-            top: 0;
-            right: 5rem;
-            width: 30rem;
-            height: 50rem;
-            cursor: pointer;
+        .center a {
+            font-size: 39rem;
+            color: #204075;
         }
 
-        .menu a {
-            font-size: 34rem;
-            font-weight: bold;
-            color:white;
-            text-decoration: none;
+        .logoburger {
+            position: absolute;
+            bottom: 10%;
+           justify-content: center;
+        }
+
+        .cancel {
+            position: absolute;
+            top: 10rem;
+            right: -40rem;
+            width: 100rem;
+            height: 100rem;
+            cursor: pointer;
         }
         
         .hover :hover  {
             color: #f4d633;
+            transition: all 0.3s ease;
         }
 
         .hovertwo:hover {
-            color: #fff;
-            transition: transform 0.3s;
+            color: #1d3b6e;
+            background-color: #f4d633;
+            transition: all 0.6s ease;
         }
         
         .tel {
             display: none;
         }
+
         .tel img {
             width: 25rem;
             height: 26rem;
@@ -167,6 +169,20 @@
             gap: 10rem;
             font-size: 16rem;
             color: #fff;
+        }
+
+        main {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 130rem;
+        }
+
+        .black {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 2;
         }
 
         .mini  {
@@ -183,12 +199,10 @@
             color: #ffffff;
         }
 
-        main {
-            padding-bottom: 130rem;
-        }
-
         .osnova {
             display: block;
+            position: relative;
+            z-index: 3;
             padding-top: 153rem;
             padding-bottom: 130rem;
         }
@@ -221,7 +235,6 @@
             gap: 10rem;
         }
 
-    
         .vidguk p {
             font-size: 20rem;
             color: #ffffff;
@@ -229,13 +242,16 @@
         }
 
         .ball {
-            display: none;
-            bottom: 86rem;
-            right: 0rem;
-           
-        }
+            display: block;
+            position: absolute;
+            bottom: -50%;
+            right: -50%;
+            z-index: 1;
+    }   
 
         .footer {    
+            overflow: hidden;
+            position: relative;
             padding-top:12rem ;
             padding-bottom: 13rem;
             align-items: center;  
@@ -246,7 +262,7 @@
             display: block;
             text-align: center;
             font-weight: bold;
-            font-size: 16rem;
+            font-size: 20rem;
             line-height: 29rem;
             color: #1e3c6f;
         }
@@ -260,45 +276,31 @@
             width: 26rem;
             height: 26rem;
         }
-        .logo2 {
-            justify-content: center;
-        }
+
         .logo2 p {
             text-align: center;
-            font-size: 12rem;
+            font-size: 20rem;
             color: #204075;
-
         }
 
          @media screen  and (min-width: 422px){
 
-        html {
-            font-size: .6px;
-        }
-
-        .osnova a {
-            max-width: 250rem;
-            padding: 23rem 42rem ;
-        }
-
-        .vidguk {
-            justify-content: flex-start;
-        }
-        
-        .grid {
-             display: grid;
-             grid-template-columns: repeat(3, 1fr);
-             justify-content: space-between;
-             align-items: center;
-             padding: 0;
+            html {
+                font-size: .6px;
             }
 
-            .menu {
-                width: 60vw;
-                height: 70vh;
+            .center {
+                width: 40vw;
+            }
+            .osnova a {
+                max-width: 250rem;
+                padding: 23rem 42rem ;
             }
 
-            
+            .vidguk {
+                justify-content: flex-start;
+            }
+
             .logo2 {
                 justify-content: end;
             }
@@ -311,13 +313,29 @@
                 font-size: 48rem;
             }
 
-           .flex_wrrap {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            align-items: center;
+            .ball {
+                display: block;
+                position: absolute;
+                right: -20%;
+                bottom: -40%;
+            }
+
+            .flex_wrrap {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+           }
+           
+           .rosclad p {
+                font-size: 16rem;
            }
 
+           .logo2 p {
+               font-size: 12rem;
+               color: #204075;
+           }
         }
         
         @media screen  and (min-width: 768px){
@@ -337,16 +355,23 @@
 
             .center{
                 display: block;
-                position: relative;
-                right: 0;
+                position: static;
+                max-width: 488rem;
+                max-height: 41rem;
                 background-color: transparent;
-                transition: none;
             }
             
+            .cancel {
+                display: none;
+            }
+
             .center ul {
+                flex-direction: row;
                 border-radius: 20rem;
                 background-color: rgba(172, 172, 170, 0.3);
-                gap: 32rem;
+                justify-content: center;
+                padding: 6rem 0;
+                gap: 20rem;
             }
             
             .center li {
@@ -362,47 +387,69 @@
                 text-transform: uppercase;
                 color: #ffffff;
                 font-weight: bold;
-
             }
             
+            .black {
+                position: absolute;
+                width: 100vw;
+                height: 110vh;
+                background-color: rgba(0, 0, 0, 0.6);
+                z-index: 2;
+             }
+
+            .logoburger {
+                display: none;
+            }
+
             .tel {
                 display: block;
             }
 
-        .main_conteiner {
-            flex-wrap: nowrap;
-        }
+            .main_conteiner {
+                flex-wrap: nowrap;
+            }
+            
+            .burger {
+                display: none;
+            }
 
-        .burger {
-            display: none;
-        }
+            .osnova {
+                padding-bottom: 130rem;
+            }
 
-        .osnova {
-            padding-bottom: 130rem;
-        }
+            .osnova h1 {
+                font-size: 48rem;
+            }
 
-        .osnova h1 {
-            font-size: 48rem;
-        }
+            .ball {
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+
 }
 
 @media screen  and (min-width: 1024px){
     html {
         font-size: 1px;
     }
-    
-    .ball {
-        display: block;
-        position: absolute;
-        bottom: 86rem;
-        right: 0rem;
+
+    .center ul {
+        gap: 29rem;
     }
+
+      .black {
+                display: none;
+            }
 }
 
 @media screen  and (min-width: 1400px){
     html {
         font-size: 1.1px;
     }
+    
 }
 
 @media screen  and (min-width: 1920px){
